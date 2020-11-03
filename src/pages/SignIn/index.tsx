@@ -40,7 +40,7 @@ const SignIn: React.FC = () => {
 
                         <Form ref={formRef} onSubmit={handleSignIn} >
                             <Input autoCorrect={false} autoCapitalize="none" keyboardType="email-address" name="email" icon="mail" placeholder="E-mail" />
-                            <Input name="password" icon="lock" placeholder="Senha" />                    
+                            <Input name="password" icon="lock" placeholder="Senha" secureTextEntry />                    
                         </Form>
                         <Button onPress={() => formRef.current?.submitForm()} >
                                 Entrar
